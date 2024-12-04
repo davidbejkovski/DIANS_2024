@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Македонска берза - Главна страница</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Main Page -->
+<div id="main-page">
+  <header>
+    <h1>Македонска Берза</h1>
+  </header>
+  <section class="filters">
+    <label>
+      Избери датум од:
+      <input type="date" id="start-date" min="2014-01-01" max="2024-12-31">
+    </label>
+    <label>
+      Избери датум до:
+      <input type="date" id="end-date" min="2014-01-01" max="2024-12-31">
+    </label>
+    <label>
+      Избери фирма:
+      <select id="company-select">
+        <!-- Options will be dynamically added here -->
+      </select>
+    </label>
+  </section>
+  <section class="content">
+    <h2>Избери фирма</h2>
+    <h3>Преглед</h3>
+    <table>
+      <thead>
+      <tr>
+        <th>Датум</th>
+        <th>Цена на последна трансакција</th>
+        <th>Мин</th>
+        <th>Мак</th>
+        <th>Просечна цена</th>
+        <th>%Промил</th>
+        <th>Количина</th>
+        <th>Промет во БЕСТ денари</th>
+        <th>Вкупен промет во денари</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>31.12.2014</td>
+        <td>12,000.00</td>
+        <td>0.00</td>
+        <td>0.00</td>
+        <td>12,000.00</td>
+        <td>0.00</td>
+        <td>0</td>
+        <td>0.00</td>
+        <td>0.00</td>
+      </tr>
+      </tbody>
+    </table>
+    <button id="btn"><span id="font">Преземи</span></button>
+  </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
