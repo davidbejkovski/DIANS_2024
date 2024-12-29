@@ -1,0 +1,100 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Home Page styles */
+#home-page {
+    background-color: #9b59b6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+#home-page h1 {
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #f1c40f;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d4ac0d;
+}
+
+/* Main Page styles */
+#main-page {
+    padding: 20px;
+}
+
+header {
+    background-color: #9b59b6;
+    color: white;
+    padding: 20px;
+}
+
+.filters {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.filters select {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.content {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #9b59b6;
+    color: white;
+}
+#main-page > section.content > table > tbody{
+    background: yellow;
+}
+
+button.btn {
+    background-color: #f39c12;
+    border-radius: 15px;
+}
+
+button.btn:hover {
+    background-color: #e67e22;
+
+}
+#btn{
+    background-color: #9b59b6;
+    border-radius: 15px;
+    margin-left: 50%;
+    padding: 10px;
+    width: 130px;
+}
+#font{
+    font-weight: bold;
+    color: white;
+}
