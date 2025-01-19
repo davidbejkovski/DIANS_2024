@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Exchange Data</title>
+</head>
+<body>
+    <h1>Stock Exchange Data</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Company</th>
+                <th>Last Price</th>
+                <th>Min</th>
+                <th>Max</th>
+                <th>Avg Price</th>
+                <th>Promil</th>
+                <th>Quantity</th>
+                <th>Best Turnover</th>
+                <th>Total Turnover</th>
+            </tr>
+        </thead>
+       <tbody>
+    {% for row in data %}
+        <tr>
+            <td>{{ row.Датум }}</td>
+            <td>{{ row.Цена на последна трансакција }}</td>
+            <td>{{ row.Мак }}</td>
+            <td>{{ row.Мин }}</td>
+            <td>{{ row.Просечна цена }}</td>
+            <td>{{ row.%пром }}</td>
+            <td>{{ row.Количина }}</td>
+            <td>{{ row.Промет во БЕСТ во денари }}</td>
+            <td>{{ row.Вкупен промет во денари }}</td>
+        </tr>
+    {% endfor %}
+</tbody>
+    </table>
+
+    <!-- Display the moving averages and oscillators -->
+    <h2>Moving Averages</h2>
+    <h3>Daily</h3>
+    <ul>
+        {% for item in moving_averages_daily %}
+            <li>{{ item.date }}: {{ item.daily_avg }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Weekly</h3>
+    <ul>
+        {% for item in moving_averages_weekly %}
+            <li>{{ item.date }}: {{ item.weekly_avg }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Monthly</h3>
+    <ul>
+        {% for item in moving_averages_monthly %}
+            <li>{{ item.date }}: {{ item.monthly_avg }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Oscillators</h2>
+    <h3>Daily</h3>
+    <ul>
+        {% for item in oscillators_daily %}
+            <li>{{ item.date }}: {{ item.daily_oscillator }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Weekly</h3>
+    <ul>
+        {% for item in oscillators_weekly %}
+            <li>{{ item.date }}: {{ item.weekly_oscillator }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Monthly</h3>
+    <ul>
+        {% for item in oscillators_monthly %}
+            <li>{{ item.date }}: {{ item.monthly_oscillator }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

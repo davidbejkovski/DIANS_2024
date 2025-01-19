@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Data</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <h1>Stock Data Analysis</h1>
+
+    <!-- Button to navigate to main.html -->
+    <form method="GET" action="{% url 'main' %}">
+        <button type="submit">Go to Stock Data Analysis</button>
+    </form>
+</body>
+</html>
