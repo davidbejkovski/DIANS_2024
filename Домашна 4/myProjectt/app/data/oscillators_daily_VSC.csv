@@ -1,0 +1,6 @@
+Name,Value,Decision
+RSI,100.0,Sell
+Stochastic,100.0,Hold
+MACD,2.0740117179229856e-08,Buy
+Bollinger High,12300.0,Hold
+Bollinger Low,12300.0,Hold
