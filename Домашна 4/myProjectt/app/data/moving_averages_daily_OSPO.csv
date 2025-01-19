@@ -1,0 +1,6 @@
+Name,Value,Decision
+SMA_20,1.0,Sell
+SMA_50,1.0,Sell
+EMA_20,1.0,Sell
+EMA_50,1.0,Sell
+EMA_200,1.0,Sell
